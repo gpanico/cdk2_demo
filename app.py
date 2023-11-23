@@ -15,7 +15,7 @@ class TwoStack(cdk.Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
        
-	 # Create an S3 bucketsf1
+	# Create an S3 bucketsf1
         my_bucket = s3.Bucket(self, "MyS3Bucket-asd9asdasdasdsadasdsadad", # specify a unique bucket name
            versioned=True,
            encryption=s3.BucketEncryption.S3_MANAGED,
